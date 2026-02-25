@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Omar Abdullah — Electrical Engineer</title>
+  <meta name="description" content="Portfolio of Omar Abdullah — Electrical Engineer. Projects, Education, Resume and Contact." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Left social bar -->
+  <nav class="social-bar" aria-label="Social links">
+    <a href="#" aria-label="GitHub" class="icon">GH</a>
+    <a href="#" aria-label="LinkedIn" class="icon">LI</a>
+    <a href="mailto:you@example.com" aria-label="Email" class="icon">@</a>
+  </nav>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">Omar Abdullah</div>
+      <a class="resume-btn" href="resume.pdf" download>Resume</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <h1 id="hero-title">Omar Abdullah</h1>
+        <p class="role">Electrical Engineer — Embedded Systems & Power Electronics</p>
+        <p class="hero-desc">I design and program embedded systems and power electronics with a focus on reliable hardware and clean firmware. Below are selected projects, education, and ways to contact me.</p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <figure class="hero-photo" aria-hidden="true">
+        <img src="assets/profile.jpg" alt="Omar Abdullah — profile photo">
+      </figure>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title">About</h2>
+        <p>I'm an electrical engineer experienced in embedded C/C++, PCB design, power converters, and control systems. I build prototypes from schematic to firmware and test rigorously to ensure real-world reliability.</p>
+        <ul class="skill-list">
+          <li>Embedded C/C++</li>
+          <li>STM32, ESP32</li>
+          <li>PCB design & Layout</li>
+          <li>Power electronics & control</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title">Selected Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card" tabindex="0">
+            <img src="assets/project1.jpg" alt="Power converter project thumbnail">
+            <div class="card-body">
+              <h3>High-efficiency DC-DC Converter</h3>
+              <p>Designed and validated a synchronous buck converter with active protection and telemetry.</p>
+              <a class="link" href="#">Read more →</a>
+            </div>
+          </article>
+
+          <article class="project-card" tabindex="0">
+            <img src="assets/project2.jpg" alt="Embedded sensor node thumbnail">
+            <div class="card-body">
+              <h3>Low-power Sensor Node</h3>
+              <p>ESP32-based sensor node with MQTT, deep-sleep power optimization and OTA updates.</p>
+              <a class="link" href="#">Read more →</a>
+            </div>
+          </article>
+
+          <article class="project-card" tabindex="0">
+            <img src="assets/project3.jpg" alt="Control system prototype thumbnail">
+            <div class="card-body">
+              <h3>Motor Control Prototype</h3>
+              <p>PID + state estimation for robust speed control with hardware-in-the-loop testing.</p>
+              <a class="link" href="#">Read more →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section education" id="education" aria-labelledby="edu-title">
+      <div class="container narrow">
+        <h2 id="edu-title">Education</h2>
+        <div class="edu-list">
+          <div class="edu-item">
+            <h3>B.Sc. Electrical Engineering</h3>
+            <p class="muted">University Name — 20XX–20XX</p>
+            <p>Relevant coursework: Power Systems, Control Systems, Signal Processing.</p>
+          </div>
+
+          <div class="edu-item">
+            <h3>Senior Project — Smart Power Management</h3>
+            <p class="muted">Design of a power management subsystem with monitoring and adaptive control.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container narrow">
+        <h2 id="contact-title">Contact</h2>
+        <p>If you’d like to collaborate or have questions, email me at <a href="mailto:you@example.com">you@example.com</a>.</p>
+        <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+          <label>
+            Name
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="_replyto" required>
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Send Message</button>
+            <a class="btn ghost" href="resume.pdf" download>Download Resume</a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container small">
+      <p>© <span id="year"></span> Omar Abdullah — Built with HTML, CSS & JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
